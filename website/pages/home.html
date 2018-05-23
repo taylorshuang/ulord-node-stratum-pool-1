@@ -136,11 +136,11 @@ input{
                                         <tbody>
                                          <tr class="home-tr">
                                              <td class="home-td td-title homeT16">Server</td>
-                                             <td class="home-td text-center">test-pool.ulord.one</td>
+                                             <td class="home-td text-center">117.45.165.141</td>
                                          </tr>
                                          <tr class="home-tr">
                                              <td class="home-td td-title homeT17">Port</td>
-                                             <td class="home-td text-center">7200</td>
+                                             <td class="home-td text-center">7100</td>
                                          </tr>
                                           <!-- <tr class="home-tr">
                                                <td class="home-td td-title homeT18">Alt. Stratum Port</td>
@@ -174,7 +174,7 @@ input{
                             <div class="tab-content-body tab1">
                                 <div class="tools-graphic windows">
                                     <h4 class="title">
-                                        <span>1.Ulord Miner</span>&nbsp;&nbsp;<a href="/static/downloads/Ulordrig-win-0.2.0.zip" download="Ulordrig-win-0.2.0.zip" class="Cdownload">点击下载</a>
+                                        <span>1.Ulord Miner</span>&nbsp;&nbsp;<a href="https://github.com/UlordChain/ulordrig/releases/download/v1.0.0/ulordrig-win-v1.0.0.zip" download="Ulordrig-win-1.0.0.zip" class="Cdownload">点击下载</a>
                                     </h4>
                                     <div class="steps">
                                         <div class="step-row">
@@ -342,7 +342,7 @@ input{
                 }*/
                 html += '<tr class="home-tr selected">' +
                 '<td class="home-td td-block">' +
-                '<a href="http://testnet-explorer.ulord.one/block/'+ block[0] + '" target="_blank">' + block[2] + '</a></td>' +
+                '<a href="http://explorer.ulord.one/block/'+ block[0] + '" target="_blank">' + block[2] + '</a></td>' +
                 '<td class="home-td td-miner"><a href="/miners/'+ block[3].split('.')[0] +'">' + block[3].split('.')[0] + '</a></td>' +
                 '<td class="home-td "><span><small>' + formatDateTime(block[4]=='x'?block[5]:block[4]) + '</small></span>' + comfirms + '</td>' +
                 '</tr>';
@@ -356,7 +356,7 @@ input{
                     var block2 = poolData[pool].confirmed.blocks[c].split(":");
                     html2 += '<tr class="home-tr selected">' +
                     '<td class="home-td td-block">'+
-                    '<a href="http://testnet-explorer.ulord.one/block/'+ block2[0] + '" target="_blank">' + block2[2] + '</a></td>' +
+                    '<a href="http://explorer.ulord.one/block/'+ block2[0] + '" target="_blank">' + block2[2] + '</a></td>' +
                     '<td class="home-td td-miner"><a href="/miners/'+ block[3].split('.')[0] +'">' + block2[3].split('.')[0] + '</a></td>' +
                     '<td class="home-td "><span><small>' + formatDateTime(block2[4]) + '</small></span>' +
                     '<span style="float:right; padding-left: 18px; color: green;"><small>*PAID*</small></span></td>' +
